@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+  // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  testDebug();
+  // setInterval(testDebug, 10000);
+
+  async function testDebug() {
+
+    let arr; // = {value: ["edf", "fgt", "abc", "azerty", "toto", "zerty"]}
+    let jl = { type: "string", value: "edf| fgt| abc| azerty| toto| zerty"};
+    
+    let sep = "";
+    let rkItem = { type: "string", value: "fgt" };
+    let sort = { type: "boolean", value: 0 };
+
+    let result = await window.function(arr, jl, sep, rkItem, sort);
+    document.getElementById("result").innerHTML = result;
+
+  }
+</script>
+</body>
+
+</html>
